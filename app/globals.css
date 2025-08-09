@@ -1,0 +1,183 @@
+:root {
+    --bg: #0b1220;
+    --surface: #111827;
+    --surface-2: #0f172a;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --primary: #22d3ee;
+    --primary-600: #0891b2;
+    --danger: #ef4444;
+    --success: #22c55e;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.menu {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0.4px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-600));
+    color: #051015;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 8px 24px rgba(34, 211, 238, 0.25);
+}
+
+.btn.secondary {
+    background: #1f2937;
+    color: var(--text);
+    box-shadow: none;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid #0b1220;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hud {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    z-index: 10;
+}
+
+.chip {
+    background: rgba(17, 24, 39, 0.85);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.gameRoot {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameCanvas {
+    position: absolute;
+    inset: 0;
+    touch-action: none;
+}
+
+.joystickWrap {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.9;
+    touch-action: none;
+}
+
+.joystickBase {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(31, 41, 55, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.joystickStick {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 56px;
+    height: 56px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #94a3b8, #64748b);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(2px);
+    z-index: 20;
+}

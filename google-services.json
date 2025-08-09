@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311125482111",
+    "project_id": "arck-sprint",
+    "storage_bucket": "arck-sprint.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311125482111:android:4661606243a270ff34fd4a",
+        "android_client_info": {
+          "package_name": "arck.sprint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF7vWNSoqhh2a12GYehIdesScwrz5sIYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
